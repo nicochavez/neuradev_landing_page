@@ -1,5 +1,6 @@
 import { Brain, Zap } from 'lucide-react'
 import type { Translations } from '../translations'
+import MiniCard from './MiniCard'
 
 export default function About({ t }: { t: Translations }) {
   return (
@@ -26,22 +27,8 @@ export default function About({ t }: { t: Translations }) {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6">
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl transition-colors duration-300">
-              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Brain className="w-6 h-6 text-blue-600" />
-              </div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{t.aiFirst}</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-300">{t.aiFirstDesc}</p>
-            </div>
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl transition-colors duration-300">
-              <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-6 h-6 text-emerald-600" />
-              </div>
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
-                {t.lightningFast}
-              </h4>
-              <p className="text-sm text-gray-600 dark:text-gray-300">{t.lightningFastDesc}</p>
-            </div>
+            <MiniCard t={t} icon={<Brain className="w-6 h-6 text-blue-600" />} />
+            <MiniCard t={t} icon={<Zap className="w-6 h-6 text-emerald-600" />} />
           </div>
         </div>
       </div>
