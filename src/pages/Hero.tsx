@@ -1,13 +1,13 @@
 import { ArrowRight, Zap, Mail, Calendar } from 'lucide-react'
 import type { Translations } from '../translations'
 
-interface HeroProps {
+interface HeroPageProps {
   t: Translations
   handleEmailClick: () => void
   handleBookingClick: () => void
 }
 
-export default function Hero({ t, handleEmailClick, handleBookingClick }: HeroProps) {
+export default function HeroPage({ t, handleEmailClick, handleBookingClick }: HeroPageProps) {
   return (
     <section
       id="home"
@@ -50,3 +50,5 @@ export default function Hero({ t, handleEmailClick, handleBookingClick }: HeroPr
     </section>
   )
 }
+
+

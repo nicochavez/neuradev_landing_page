@@ -1,5 +1,5 @@
 import { Brain, Zap } from 'lucide-react'
-import type { Translations } from '../translations'
+import type { Translations } from '../../translations'
 import MiniCard from './MiniCard'
 
 export default function About({ t }: { t: Translations }) {

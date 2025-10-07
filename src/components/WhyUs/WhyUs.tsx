@@ -1,6 +1,6 @@
 import { Zap, CheckCircle, Brain } from 'lucide-react'
-import type { Translations } from '../translations'
-import Feature from './feature'
+import type { Translations } from '../../translations'
+import Feature from './Feature'
 import CTA from './CTA'
 
 export default function WhyUs({

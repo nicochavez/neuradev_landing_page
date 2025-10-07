@@ -1,5 +1,5 @@
 import { type JSX } from 'react'
-import type { Translations } from '../translations'
+import type { Translations } from '../../translations'
 
 interface MiniCardProps {
   t: Translations

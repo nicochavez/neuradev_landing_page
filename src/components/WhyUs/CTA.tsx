@@ -1,5 +1,5 @@
 import { Mail, Calendar, ChevronRight } from 'lucide-react'
-import type { Translations } from '../translations'
+import type { Translations } from '../../translations'
 
 export default function CTA({
   t,

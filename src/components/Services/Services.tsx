@@ -1,5 +1,5 @@
-import type { Translations } from '../translations'
 import { Brain, Zap, Cog } from 'lucide-react'
+import type { Translations } from '../../translations'
 import ServiceCard from './ServiceCard'
 
 export default function Services({ t }: { t: Translations }) {
