@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 
-export type Language = 'en' | 'es' | 'fr' | 'de' | 'pt';
+export type Language = 'en' | 'es';
 
 export interface LanguageOption {
   code: Language;
@@ -11,9 +11,6 @@ export interface LanguageOption {
 export const languages: LanguageOption[] = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'pt', name: 'Português', flag: '🇧🇷' },
 ];
 
 export const useLanguage = () => {
@@ -24,10 +21,9 @@ export const useLanguage = () => {
       return saved;
     }
     
-    const browserLang = navigator.language.split('-')[0] as Language;
-    if (languages.find(lang => lang.code === browserLang)) {
-      return browserLang;
-    }
+    const browserLangRaw = navigator.language.split('-')[0];
+    const browserLang = (browserLangRaw === 'es' ? 'es' : 'en') as Language;
+    if (languages.find(lang => lang.code === browserLang)) return browserLang;
     
     return 'en';
   });

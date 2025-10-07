@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from 'preact/hooks';
 import { ChevronDown, Globe } from 'lucide-react';
-import { useLanguage, languages, type Language } from '../hooks/useLanguage';
+import { useLanguageContext } from '../context/LanguageContext';
+import type { Language } from '../hooks/useLanguage';
 
 export const LanguageDropdown = () => {
-  const { currentLanguage, changeLanguage, getCurrentLanguage } = useLanguage();
+  const { currentLanguage, changeLanguage, languages } = useLanguageContext();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -23,7 +24,7 @@ export const LanguageDropdown = () => {
     setIsOpen(false);
   };
 
-  const currentLang = getCurrentLanguage();
+  const currentLang = languages.find(l => l.code === currentLanguage) || languages[0];
 
   return (
     <div className="relative" ref={dropdownRef}>

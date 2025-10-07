@@ -1,10 +1,10 @@
-import { useLanguage } from './hooks/useLanguage'
+import { useLanguageContext } from './context/LanguageContext'
 import { getTranslations } from './translations'
 import MainLayout from './layout/MainLayout'
 import Home from './pages/Home'
 
 export default function App() {
-  const { currentLanguage } = useLanguage()
+  const { currentLanguage } = useLanguageContext()
   const t = getTranslations(currentLanguage)
 
   const handleEmailClick = () => {
