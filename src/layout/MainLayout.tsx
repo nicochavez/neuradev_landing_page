@@ -2,6 +2,7 @@ import Header from '../components/header/Header'
 import Footer from '../components/Footer'
 import BackgroundCanvas from '../components/BackgroundCanvas'
 import type { ReactNode } from 'preact/compat'
+import BackToTop from '../components/BackToTop'
 
 interface MainLayoutProps {
   children: ReactNode
@@ -21,6 +22,7 @@ export default function MainLayout({
         <Header t={t} />
         {children}
         <Footer t={t} handleEmailClick={() => {}} handleBookingClick={handleBookingClick} />
+        <BackToTop />
       </div>
     </div>
   )
