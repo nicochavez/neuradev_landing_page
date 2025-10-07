@@ -7,6 +7,7 @@ import About from './components/About'
 import Services from './components/Services'
 import WhyUs from './components/whyUs'
 import Footer from './components/footer'
+import BackgroundCanvas from './components/BackgroundCanvas'
 
 export default function App() {
   const { isDark, toggleDarkMode } = useDarkMode()
@@ -23,7 +24,9 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300 relative">
+      <BackgroundCanvas />
+      <div className="relative z-10">
       <Header
         isDark={isDark}
         toggleDarkMode={toggleDarkMode}
@@ -35,6 +38,7 @@ export default function App() {
       <Services t={t} />
       <WhyUs t={t} handleEmailClick={handleEmailClick} handleBookingClick={handleBookingClick} />
       <Footer t={t} handleEmailClick={handleEmailClick} handleBookingClick={handleBookingClick} />
+      </div>
     </div>
   )
 }
