@@ -18,21 +18,21 @@ export default function Footer({
             <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-emerald-500 rounded-xl flex items-center justify-center">
               <Brain className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold">AIFlow</span>
+            <span className="text-2xl font-bold">Neuradev</span>
           </div>
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
             <p className="text-gray-400 dark:text-gray-500">{t.readyToStart}</p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-3">
               <button
                 onClick={handleEmailClick}
-                className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors flex items-center"
+                className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors flex items-center text-sm md:text-base"
               >
                 <Mail className="w-4 h-4 mr-2" />
                 hello@youragency.com
               </button>
               <button
                 onClick={handleBookingClick}
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center"
+                className="bg-blue-600 text-white px-4 py-2 md:px-6 md:py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center text-sm md:text-base"
               >
                 <Calendar className="w-4 h-4 mr-2" />
                 {t.bookMeeting}
