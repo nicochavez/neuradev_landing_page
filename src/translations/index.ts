@@ -6,6 +6,16 @@ export interface Translations {
   services: string;
   whyChooseUs: string;
   getStarted: string;
+  team: string;
+  
+  // Team Section
+  teamIntro: string;
+  aiEngineer: string;
+  softwareEngineer: string;
+  devopsEngineer: string;
+  nicolasDesc: string;
+  tomasDesc: string;
+  sebastianDesc: string;
   
   // Hero Section
   heroTagline: string;
@@ -71,6 +81,16 @@ const translations: Record<Language, Translations> = {
     services: 'Services',
     whyChooseUs: 'Why Choose Us',
     getStarted: 'Get Started',
+    team: 'Team',
+    
+    // Team Section
+    teamIntro: 'A complementary group of specialists taking your AI projects to production.',
+    aiEngineer: 'AI Engineer',
+    softwareEngineer: 'Software Engineer',
+    devopsEngineer: 'DevOps Engineer',
+    nicolasDesc: 'Leads the construction of AI agents, LLM orchestration (tools, function calling), production-grade RAG, and continuous quality evaluation.',
+    tomasDesc: 'Full‑stack expert focused on robust API design, automated testing, performance, and solid architecture practices.',
+    sebastianDesc: 'AWS specialist in Infrastructure as Code, CI/CD, observability, security, and high availability in production.',
     
     // Hero Section
     heroTagline: 'AI-Powered Development & Automation',
@@ -135,6 +155,16 @@ const translations: Record<Language, Translations> = {
     services: 'Servicios',
     whyChooseUs: 'Por Qué Elegirnos',
     getStarted: 'Comenzar',
+    team: 'Equipo',
+    
+    // Team Section
+    teamIntro: 'Un grupo complementario de especialistas que llevan tus proyectos de IA a producción.',
+    aiEngineer: 'Ingeniero de IA',
+    softwareEngineer: 'Ingeniero de Software',
+    devopsEngineer: 'Ingeniero DevOps',
+    nicolasDesc: 'Responsable de construcción de agentes de IA, orquestación de LLMs (tools, function calling), RAG productivo y evaluación continua de calidad.',
+    tomasDesc: 'Experto full‑stack en diseño de APIs robustas, pruebas automatizadas, rendimiento y buenas prácticas de arquitectura.',
+    sebastianDesc: 'Especialista en AWS, Infraestructura como Código, CI/CD, observabilidad, seguridad y alta disponibilidad en producción.',
     
     // Hero Section
     heroTagline: 'Desarrollo y Automatización Impulsados por IA',
@@ -191,198 +221,6 @@ const translations: Record<Language, Translations> = {
     // Footer
     readyToStart: '¿Listo para comenzar?',
     footerText: '© 2025 AIFlow. Construyendo el futuro con automatización inteligente.',
-  },
-  
-  fr: {
-    // Header
-    about: 'À Propos',
-    services: 'Services',
-    whyChooseUs: 'Pourquoi Nous Choisir',
-    getStarted: 'Commencer',
-    
-    // Hero Section
-    heroTagline: 'Développement et Automatisation Alimentés par l\'IA',
-    heroTitle1: 'Construisez Plus Intelligemment.',
-    heroTitle2: 'Automatisez Tout.',
-    heroDescription: 'Nous transformons votre entreprise avec des solutions d\'IA de pointe et une automatisation intelligente. Obtenez des résultats plus rapides, réduisez les coûts et gardez une longueur d\'avance sur la concurrence.',
-    sendMessage: 'Envoyez-nous un message',
-    bookMeeting: 'Réserver une réunion',
-    
-    // About Section
-    whoWeAre: 'Qui Nous Sommes',
-    whoWeAreDescription: 'Une équipe avant-gardiste de spécialistes en IA et d\'experts en automatisation dédiés à révolutionner la façon dont les entreprises opèrent à l\'ère numérique.',
-    pioneersTitle: 'Pionniers de l\'Innovation IA',
-    pioneersDescription1: 'Nous ne sommes pas seulement des développeurs – nous sommes des visionnaires qui voient le pouvoir transformateur de l\'intelligence artificielle et de l\'automatisation. Notre mission est de rendre la technologie de pointe accessible aux entreprises de toutes tailles.',
-    pioneersDescription2: 'Avec une perspective fraîche et une expertise technique approfondie, nous nous concentrons sur la livraison de solutions qui ne fonctionnent pas seulement aujourd\'hui, mais évoluent avec votre entreprise demain.',
-    aiFirst: 'IA d\'Abord',
-    aiFirstDesc: 'Chaque solution alimentée par l\'automatisation intelligente',
-    lightningFast: 'Ultra Rapide',
-    lightningFastDesc: 'Cycles de développement et de déploiement rapides',
-    
-    // Services Section
-    whatWeDo: 'Ce Que Nous Faisons',
-    whatWeDoDescription: 'Des applications alimentées par l\'IA aux systèmes d\'automatisation intelligente, nous créons des solutions qui transforment vos opérations commerciales.',
-    aiDevelopment: 'Développement IA',
-    aiDevelopmentDesc: 'Solutions d\'IA personnalisées incluant des modèles d\'apprentissage automatique, le traitement du langage naturel et des systèmes d\'analyse de données intelligents adaptés à vos besoins.',
-    smartAutomation: 'Automatisation Intelligente',
-    smartAutomationDesc: 'Automatisation de flux de travail intelligente qui apprend et s\'adapte, éliminant les tâches répétitives et optimisant vos processus métier pour une efficacité maximale.',
-    customSolutions: 'Solutions Personnalisées',
-    customSolutionsDesc: 'Applications et systèmes sur mesure conçus spécifiquement pour vos exigences commerciales uniques, construits avec l\'évolutivité et la croissance future à l\'esprit.',
-    machineLearning: 'Modèles d\'Apprentissage Automatique',
-    nlp: 'Traitement du Langage Naturel',
-    predictiveAnalytics: 'Analyse Prédictive',
-    processAutomation: 'Automatisation des Processus',
-    workflowOptimization: 'Optimisation des Flux de Travail',
-    integrationSolutions: 'Solutions d\'Intégration',
-    webApplications: 'Applications Web',
-    apiDevelopment: 'Développement d\'API',
-    systemIntegration: 'Intégration de Systèmes',
-    
-    // Why Choose Us Section
-    whyChooseUsTitle: 'Pourquoi Nous Choisir',
-    whyChooseUsDescription: 'Nous combinons innovation et fiabilité pour livrer des résultats exceptionnels qui propulsent votre entreprise vers l\'avant.',
-    innovationFirst: 'Innovation d\'Abord',
-    innovationFirstDesc: 'Nous restons à la pointe de la technologie IA et d\'automatisation, garantissant que vous ayez toujours accès aux solutions les plus récentes et les plus efficaces.',
-    maximumEfficiency: 'Efficacité Maximale',
-    maximumEfficiencyDesc: 'Nos solutions sont conçues pour maximiser l\'efficacité et minimiser le gaspillage, vous aidant à accomplir plus avec moins d\'effort et de ressources.',
-    fastResults: 'Résultats Rapides',
-    fastResultsDesc: 'Nous croyons en l\'implémentation rapide et les victoires rapides. Voyez des améliorations mesurables dans vos opérations commerciales en semaines, pas en mois.',
-    
-    // CTA Section
-    ctaTitle: 'Prêt à Transformer Votre Entreprise ?',
-    ctaDescription: 'Discutons de la façon dont l\'IA et l\'automatisation peuvent révolutionner vos opérations. Commencez avec une consultation gratuite aujourd\'hui.',
-    
-    // Footer
-    readyToStart: 'Prêt à commencer ?',
-    footerText: '© 2025 AIFlow. Construire l\'avenir avec l\'automatisation intelligente.',
-  },
-  
-  de: {
-    // Header
-    about: 'Über Uns',
-    services: 'Dienstleistungen',
-    whyChooseUs: 'Warum Uns Wählen',
-    getStarted: 'Loslegen',
-    
-    // Hero Section
-    heroTagline: 'KI-gestützte Entwicklung & Automatisierung',
-    heroTitle1: 'Intelligenter Bauen.',
-    heroTitle2: 'Alles Automatisieren.',
-    heroDescription: 'Wir transformieren Ihr Unternehmen mit modernsten KI-Lösungen und intelligenter Automatisierung. Erzielen Sie schnellere Ergebnisse, reduzieren Sie Kosten und bleiben Sie der Konkurrenz voraus.',
-    sendMessage: 'Nachricht senden',
-    bookMeeting: 'Meeting buchen',
-    
-    // About Section
-    whoWeAre: 'Wer Wir Sind',
-    whoWeAreDescription: 'Ein zukunftsorientiertes Team von KI-Spezialisten und Automatisierungsexperten, das sich der Revolution der Geschäftstätigkeit im digitalen Zeitalter widmet.',
-    pioneersTitle: 'Pioniere der KI-Innovation',
-    pioneersDescription1: 'Wir sind nicht nur Entwickler – wir sind Visionäre, die die transformative Kraft der künstlichen Intelligenz und Automatisierung sehen. Unsere Mission ist es, modernste Technologie für Unternehmen jeder Größe zugänglich zu machen.',
-    pioneersDescription2: 'Mit einer frischen Perspektive und tiefgreifender technischer Expertise konzentrieren wir uns darauf, Lösungen zu liefern, die nicht nur heute funktionieren, sondern sich morgen mit Ihrem Unternehmen weiterentwickeln.',
-    aiFirst: 'KI-First',
-    aiFirstDesc: 'Jede Lösung wird von intelligenter Automatisierung angetrieben',
-    lightningFast: 'Blitzschnell',
-    lightningFastDesc: 'Schnelle Entwicklungs- und Bereitstellungszyklen',
-    
-    // Services Section
-    whatWeDo: 'Was Wir Tun',
-    whatWeDoDescription: 'Von KI-gestützten Anwendungen bis hin zu intelligenten Automatisierungssystemen schaffen wir Lösungen, die Ihre Geschäftsabläufe transformieren.',
-    aiDevelopment: 'KI-Entwicklung',
-    aiDevelopmentDesc: 'Maßgeschneiderte KI-Lösungen einschließlich Machine-Learning-Modelle, natürliche Sprachverarbeitung und intelligente Datenanalysesysteme, die auf Ihre Bedürfnisse zugeschnitten sind.',
-    smartAutomation: 'Intelligente Automatisierung',
-    smartAutomationDesc: 'Intelligente Workflow-Automatisierung, die lernt und sich anpasst, repetitive Aufgaben eliminiert und Ihre Geschäftsprozesse für maximale Effizienz optimiert.',
-    customSolutions: 'Maßgeschneiderte Lösungen',
-    customSolutionsDesc: 'Maßgeschneiderte Anwendungen und Systeme, die speziell für Ihre einzigartigen Geschäftsanforderungen entwickelt wurden, mit Fokus auf Skalierbarkeit und zukünftiges Wachstum.',
-    machineLearning: 'Machine-Learning-Modelle',
-    nlp: 'Natürliche Sprachverarbeitung',
-    predictiveAnalytics: 'Prädiktive Analytik',
-    processAutomation: 'Prozessautomatisierung',
-    workflowOptimization: 'Workflow-Optimierung',
-    integrationSolutions: 'Integrationslösungen',
-    webApplications: 'Webanwendungen',
-    apiDevelopment: 'API-Entwicklung',
-    systemIntegration: 'Systemintegration',
-    
-    // Why Choose Us Section
-    whyChooseUsTitle: 'Warum Uns Wählen',
-    whyChooseUsDescription: 'Wir kombinieren Innovation mit Zuverlässigkeit, um außergewöhnliche Ergebnisse zu liefern, die Ihr Unternehmen voranbringen.',
-    innovationFirst: 'Innovation Zuerst',
-    innovationFirstDesc: 'Wir bleiben an der Spitze der KI- und Automatisierungstechnologie und stellen sicher, dass Sie immer Zugang zu den neuesten und effektivsten Lösungen haben.',
-    maximumEfficiency: 'Maximale Effizienz',
-    maximumEfficiencyDesc: 'Unsere Lösungen sind darauf ausgelegt, die Effizienz zu maximieren und Verschwendung zu minimieren, damit Sie mit weniger Aufwand und Ressourcen mehr erreichen.',
-    fastResults: 'Schnelle Ergebnisse',
-    fastResultsDesc: 'Wir glauben an schnelle Implementierung und schnelle Erfolge. Sehen Sie messbare Verbesserungen in Ihren Geschäftsabläufen innerhalb von Wochen, nicht Monaten.',
-    
-    // CTA Section
-    ctaTitle: 'Bereit, Ihr Unternehmen zu Transformieren?',
-    ctaDescription: 'Lassen Sie uns besprechen, wie KI und Automatisierung Ihre Abläufe revolutionieren können. Starten Sie heute mit einer kostenlosen Beratung.',
-    
-    // Footer
-    readyToStart: 'Bereit anzufangen?',
-    footerText: '© 2025 AIFlow. Die Zukunft mit intelligenter Automatisierung gestalten.',
-  },
-  
-  pt: {
-    // Header
-    about: 'Sobre',
-    services: 'Serviços',
-    whyChooseUs: 'Por Que Nos Escolher',
-    getStarted: 'Começar',
-    
-    // Hero Section
-    heroTagline: 'Desenvolvimento e Automação Impulsionados por IA',
-    heroTitle1: 'Construa Mais Inteligente.',
-    heroTitle2: 'Automatize Tudo.',
-    heroDescription: 'Transformamos seu negócio com soluções de IA de ponta e automação inteligente. Obtenha resultados mais rápidos, reduza custos e fique à frente da concorrência.',
-    sendMessage: 'Envie uma mensagem',
-    bookMeeting: 'Agendar reunião',
-    
-    // About Section
-    whoWeAre: 'Quem Somos',
-    whoWeAreDescription: 'Uma equipe visionária de especialistas em IA e experts em automação dedicados a revolucionar como as empresas operam na era digital.',
-    pioneersTitle: 'Pioneiros em Inovação de IA',
-    pioneersDescription1: 'Não somos apenas desenvolvedores – somos visionários que veem o poder transformador da inteligência artificial e automação. Nossa missão é tornar a tecnologia de ponta acessível para empresas de todos os tamanhos.',
-    pioneersDescription2: 'Com uma perspectiva fresca e profunda expertise técnica, focamos em entregar soluções que não apenas funcionam hoje, mas evoluem com seu negócio amanhã.',
-    aiFirst: 'IA em Primeiro',
-    aiFirstDesc: 'Toda solução impulsionada por automação inteligente',
-    lightningFast: 'Super Rápido',
-    lightningFastDesc: 'Ciclos rápidos de desenvolvimento e implantação',
-    
-    // Services Section
-    whatWeDo: 'O Que Fazemos',
-    whatWeDoDescription: 'De aplicações impulsionadas por IA a sistemas de automação inteligente, criamos soluções que transformam suas operações de negócio.',
-    aiDevelopment: 'Desenvolvimento de IA',
-    aiDevelopmentDesc: 'Soluções de IA personalizadas incluindo modelos de aprendizado de máquina, processamento de linguagem natural e sistemas de análise de dados inteligentes adaptados às suas necessidades.',
-    smartAutomation: 'Automação Inteligente',
-    smartAutomationDesc: 'Automação de fluxo de trabalho inteligente que aprende e se adapta, eliminando tarefas repetitivas e otimizando seus processos de negócio para máxima eficiência.',
-    customSolutions: 'Soluções Personalizadas',
-    customSolutionsDesc: 'Aplicações e sistemas sob medida projetados especificamente para seus requisitos únicos de negócio, construídos com escalabilidade e crescimento futuro em mente.',
-    machineLearning: 'Modelos de Aprendizado de Máquina',
-    nlp: 'Processamento de Linguagem Natural',
-    predictiveAnalytics: 'Análise Preditiva',
-    processAutomation: 'Automação de Processos',
-    workflowOptimization: 'Otimização de Fluxo de Trabalho',
-    integrationSolutions: 'Soluções de Integração',
-    webApplications: 'Aplicações Web',
-    apiDevelopment: 'Desenvolvimento de API',
-    systemIntegration: 'Integração de Sistemas',
-    
-    // Why Choose Us Section
-    whyChooseUsTitle: 'Por Que Nos Escolher',
-    whyChooseUsDescription: 'Combinamos inovação com confiabilidade para entregar resultados excepcionais que impulsionam seu negócio para frente.',
-    innovationFirst: 'Inovação em Primeiro',
-    innovationFirstDesc: 'Permanecemos na vanguarda da tecnologia de IA e automação, garantindo que você sempre tenha acesso às soluções mais recentes e eficazes.',
-    maximumEfficiency: 'Máxima Eficiência',
-    maximumEfficiencyDesc: 'Nossas soluções são projetadas para maximizar a eficiência e minimizar o desperdício, ajudando você a alcançar mais com menos esforço e recursos.',
-    fastResults: 'Resultados Rápidos',
-    fastResultsDesc: 'Acreditamos em implementação rápida e vitórias rápidas. Veja melhorias mensuráveis em suas operações de negócio em semanas, não meses.',
-    
-    // CTA Section
-    ctaTitle: 'Pronto para Transformar Seu Negócio?',
-    ctaDescription: 'Vamos discutir como IA e automação podem revolucionar suas operações. Comece com uma consulta gratuita hoje.',
-    
-    // Footer
-    readyToStart: 'Pronto para começar?',
-    footerText: '© 2025 AIFlow. Construindo o futuro com automação inteligente.',
   },
 };
 

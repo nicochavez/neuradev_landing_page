@@ -25,6 +25,12 @@ export default function Navbar({
           {t.services}
         </a>
         <a
+          href="#team"
+          className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+        >
+          {t.team}
+        </a>
+        <a
           href="#why-us"
           className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
         >
@@ -58,6 +64,13 @@ export default function Navbar({
               className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               {t.services}
+            </a>
+            <a
+              href="#team"
+              onClick={() => setOpen(false)}
+              className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
+              {t.team}
             </a>
             <a
               href="#why-us"
