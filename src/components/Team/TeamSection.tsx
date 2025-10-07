@@ -7,19 +7,19 @@ export default function TeamSection({ t }: { t: Translations }) {
       name: 'Nicolás Chávez',
       role: t.aiEngineer,
       desc: t.nicolasDesc,
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: 'https://www.linkedin.com/in/nicolas-leonardo-chavez/',
     },
     {
       name: 'Tomás Álvarez',
       role: t.softwareEngineer,
       desc: t.tomasDesc,
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: 'https://www.linkedin.com/in/tomas-i-alvarez-03xyza/',
     },
     {
       name: 'Sebastián Zafra',
       role: t.devopsEngineer,
       desc: t.sebastianDesc,
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: 'https://www.linkedin.com/in/sebastian-zafra/',
     },
   ]
 
