@@ -1,10 +1,10 @@
 import { Brain, Zap } from 'lucide-react'
-import type { Translations } from '../translations'
+import type { Translations } from '../../translations'
 import MiniCard from './MiniCard'
 
 export default function About({ t }: { t: Translations }) {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300 min-h-screen flex items-center">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">

@@ -1,12 +1,12 @@
-import type { Translations } from '../translations'
 import { Brain, Zap, Cog } from 'lucide-react'
+import type { Translations } from '../../translations'
 import ServiceCard from './ServiceCard'
 
 export default function Services({ t }: { t: Translations }) {
   return (
     <section
       id="services"
-      className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+      className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 min-h-screen flex items-center"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

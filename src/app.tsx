@@ -1,16 +1,10 @@
-import { useDarkMode } from './hooks/useDarkMode'
-import { useLanguage } from './hooks/useLanguage'
+import { useLanguageContext } from './context/LanguageContext'
 import { getTranslations } from './translations'
-import Header from './components/header/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import WhyUs from './components/whyUs'
-import Footer from './components/footer'
+import MainLayout from './layout/MainLayout'
+import Home from './pages/Home'
 
 export default function App() {
-  const { isDark, toggleDarkMode } = useDarkMode()
-  const { currentLanguage } = useLanguage()
+  const { currentLanguage } = useLanguageContext()
   const t = getTranslations(currentLanguage)
 
   const handleEmailClick = () => {
@@ -23,18 +17,11 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <Header
-        isDark={isDark}
-        toggleDarkMode={toggleDarkMode}
-        t={t}
-        handleEmailClick={handleEmailClick}
-      />
-      <Hero t={t} handleEmailClick={handleEmailClick} handleBookingClick={handleBookingClick} />
-      <About t={t} />
-      <Services t={t} />
-      <WhyUs t={t} handleEmailClick={handleEmailClick} handleBookingClick={handleBookingClick} />
-      <Footer t={t} handleEmailClick={handleEmailClick} handleBookingClick={handleBookingClick} />
-    </div>
+    <MainLayout
+      t={t}
+      handleBookingClick={handleBookingClick}
+    >
+      <Home t={t} handleEmailClick={handleEmailClick} handleBookingClick={handleBookingClick} />
+    </MainLayout>
   )
 }
