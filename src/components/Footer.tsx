@@ -1,4 +1,5 @@
 import { Brain, Mail, Calendar } from 'lucide-react'
+import { FaLinkedin, FaInstagram, FaTiktok, FaXTwitter } from 'react-icons/fa6'
 import type { Translations } from '../translations'
 
 export default function Footer({
@@ -28,7 +29,7 @@ export default function Footer({
                 className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors flex items-center text-sm md:text-base"
               >
                 <Mail className="w-4 h-4 mr-2" />
-                hello@youragency.com
+                neuradev.aisolutions@gmail.com
               </button>
               <button
                 onClick={handleBookingClick}
@@ -41,6 +42,40 @@ export default function Footer({
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 dark:border-gray-700 text-center">
+          <div className="flex justify-center space-x-6 mb-4">
+            <a
+              href="https://linkedin.com/company/neuradev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-blue-500 transition-colors"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a
+              href="https://instagram.com/neuradev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-pink-500 transition-colors"
+            >
+              <FaInstagram size={24} />
+            </a>
+            <a
+              href="https://tiktok.com/@neuradev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <FaTiktok size={24} />
+            </a>
+            <a
+              href="https://x.com/neuradev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <FaXTwitter size={24} />
+            </a>
+          </div>
           <p className="text-gray-400 dark:text-gray-500">{t.footerText}</p>
         </div>
       </div>

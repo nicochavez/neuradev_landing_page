@@ -4,7 +4,10 @@ import MiniCard from './MiniCard'
 
 export default function About({ t }: { t: Translations }) {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300 min-h-screen flex items-center">
+    <section
+      id="about"
+      className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300 min-h-screen flex items-center"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -27,8 +30,16 @@ export default function About({ t }: { t: Translations }) {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6">
-            <MiniCard t={t} icon={<Brain className="w-6 h-6 text-blue-600" />} />
-            <MiniCard t={t} icon={<Zap className="w-6 h-6 text-emerald-600" />} />
+            <MiniCard
+              title={t.aiFirst}
+              description={t.aiFirstDesc}
+              icon={<Brain className="w-6 h-6 text-blue-600" />}
+            />
+            <MiniCard
+              title={t.lightningFast}
+              description={t.lightningFastDesc}
+              icon={<Zap className="w-6 h-6 text-emerald-600" />}
+            />
           </div>
         </div>
       </div>

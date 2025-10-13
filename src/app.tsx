@@ -8,19 +8,17 @@ export default function App() {
   const t = getTranslations(currentLanguage)
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:hello@youragency.com'
+    window.location.href =
+      'mailto:neuradev.aisolutions@gmail.com?subject=First contact&body=Hello, I would like to discuss...'
   }
 
   const handleBookingClick = () => {
     // Replace with your actual booking link
-    window.open('https://calendly.com/youragency', '_blank')
+    window.open('https://calendly.com/neuradev-aisolutions/30min', '_blank')
   }
 
   return (
-    <MainLayout
-      t={t}
-      handleBookingClick={handleBookingClick}
-    >
+    <MainLayout t={t} handleBookingClick={handleBookingClick}>
       <Home t={t} handleEmailClick={handleEmailClick} handleBookingClick={handleBookingClick} />
     </MainLayout>
   )
